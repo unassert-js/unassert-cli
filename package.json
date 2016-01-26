@@ -1,7 +1,7 @@
 {
   "name": "unassert-cli",
   "description": "Command line tool for unassert",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": {
     "name": "Takuto Wada",
     "email": "takuto.wada@gmail.com",
