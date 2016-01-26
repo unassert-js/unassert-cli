@@ -3,6 +3,11 @@ unassert-cli
 
 Command line tool for [unassert](https://github.com/twada/unassert)
 
+[![Build Status][travis-image]][travis-url]
+[![NPM version][npm-image]][npm-url]
+[![Dependency Status][depstat-image]][depstat-url]
+[![License][license-image]][license-url]
+
 
 DESCRIPTION
 ---------------------------------------
@@ -58,3 +63,16 @@ AUTHOR
 LICENSE
 ---------------------------------------
 Licensed under the [MIT](http://twada.mit-license.org/) license.
+
+
+[npm-url]: https://npmjs.org/package/unassert-cli
+[npm-image]: https://badge.fury.io/js/unassert-cli.svg
+
+[travis-url]: https://travis-ci.org/twada/unassert-cli
+[travis-image]: https://secure.travis-ci.org/twada/unassert-cli.svg?branch=master
+
+[depstat-url]: https://gemnasium.com/twada/unassert-cli
+[depstat-image]: https://gemnasium.com/twada/unassert-cli.svg
+
+[license-url]: http://twada.mit-license.org/
+[license-image]: https://img.shields.io/badge/license-MIT-brightgreen.svg
