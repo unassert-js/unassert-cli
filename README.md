@@ -1,18 +1,12 @@
 unassert-cli
 ================================
 
-Command line tool for [unassert](https://github.com/twada/unassert)
+Command line tool for [unassert](https://github.com/twada/unassert). Provides `unassert` command which compiles assertions away from target file.
 
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
 [![Dependency Status][depstat-image]][depstat-url]
 [![License][license-image]][license-url]
-
-
-DESCRIPTION
----------------------------------------
-
-unassert-cli provides an `unassert` command which compiles assertions away from target file.
 
 
 #### RELATED MODULES
@@ -29,6 +23,20 @@ CHANGELOG
 See [CHANGELOG](https://github.com/twada/unassert-cli/blob/master/CHANGELOG.md)
 
 
+INSTALL
+---------------------------------------
+
+### via npm
+
+Install globally,
+
+    $ npm install -g unassert-cli
+
+and/or locally.
+
+    $ npm install --save-dev unassert-cli
+
+
 USAGE
 ---------------------------------------
 
@@ -39,20 +47,6 @@ $ unassert /path/to/src/target.js > /path/to/build/target.js
 ```
 $ cat /path/to/src/target.js | unassert > /path/to/build/target.js
 ```
-
-
-INSTALL
----------------------------------------
-
-### via npm
-
-Install locally,
-
-    $ npm install --save-dev unassert-cli
-
-and/or globally.
-
-    $ npm install -g unassert-cli
 
 
 AUTHOR
