@@ -23,6 +23,44 @@ CHANGELOG
 See [CHANGELOG](https://github.com/twada/unassert-cli/blob/master/CHANGELOG.md)
 
 
+EXAMPLE
+---------------------------------------
+
+For given `math.js` below,
+
+```javascript
+'use strict';
+
+var assert = require('assert');
+
+function add (a, b) {
+    console.assert(typeof a === 'number');
+    assert(!isNaN(a));
+    assert.equal(typeof b, 'number');
+    assert.ok(!isNaN(b));
+    return a + b;
+}
+```
+
+Install `unassert` command, run it and redirect its output into file.
+
+```
+$ npm install -g unassert-cli
+$ unassert /path/to/src/math.js > /path/to/dist/math.js
+```
+
+Then you will see assert calls in `/path/to/dist/math.js` disappear.
+
+```javascript
+'use strict';
+function add(a, b) {
+    return a + b;
+}
+```
+
+See [unassert](https://github.com/twada/unassert) project for more documentation.
+
+
 INSTALL
 ---------------------------------------
 
