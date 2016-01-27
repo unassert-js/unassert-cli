@@ -25,14 +25,7 @@ function transform (code) {
 
 var args = process.argv.slice(2);
 var file = args[0];
-var input, filepath;
-
-if (file && file !== '-') {
-    filepath = file;
-    input = fs.createReadStream(file);
-} else {
-    input = process.stdin;
-} 
+var input = (file && file !== '-') ? fs.createReadStream(file) : process.stdin;
 
 input.pipe(concat(function(buf) {
     console.log(transform(buf.toString('utf8')));
