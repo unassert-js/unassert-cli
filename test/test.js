@@ -8,15 +8,31 @@ var assert = require('assert');
 var unassertCommand = path.join(__dirname, '..', 'bin', 'cmd.js');
 
 function testUnassertCommand (fixtureName) {
-    it(fixtureName, function (done) {
-        var fixtureFilepath = path.resolve(__dirname, 'fixtures', fixtureName, 'fixture.js');
-        var expectedFilepath = path.resolve(__dirname, 'fixtures', fixtureName, 'expected.js');
-        var expected = fs.readFileSync(expectedFilepath).toString();
-        var proc = child.spawn(unassertCommand, [fixtureFilepath]);
+    var fixtureFilepath = path.resolve(__dirname, 'fixtures', fixtureName, 'fixture.js');
+    var expectedFilepath = path.resolve(__dirname, 'fixtures', fixtureName, 'expected.js');
+    var input = fs.readFileSync(fixtureFilepath, 'utf8');
+    var expected = fs.readFileSync(expectedFilepath, 'utf8');
+    function assertOutputMatches (proc, done) {
         proc.stdout.pipe(concat(function (output) {
             assert.equal(output.toString('utf8'), expected);
             done();
         }));
+    }
+    describe(fixtureName, function () {
+        it('open file when filepath is specified', function (done) {
+            var proc = child.spawn(unassertCommand, [fixtureFilepath]);
+            assertOutputMatches(proc, done);
+        });
+        it('read from stdin when filepath is not specified', function (done) {
+            var proc = child.spawn(unassertCommand);
+            assertOutputMatches(proc, done);
+            proc.stdin.end(input);
+        });
+        it('read from stdin when filepath is "-"', function (done) {
+            var proc = child.spawn(unassertCommand, ['-']);
+            assertOutputMatches(proc, done);
+            proc.stdin.end(input);
+        });
     });
 }
 
