@@ -1,6 +1,6 @@
 {
   "name": "unassert-cli",
-  "description": "Command line tool for unassert",
+  "description": "CLI for unassert: encourage reliable programming by writing assertions in production code, and compiling them away from release",
   "version": "0.1.0",
   "author": {
     "name": "Takuto Wada",

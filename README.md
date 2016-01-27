@@ -1,7 +1,7 @@
 unassert-cli
 ================================
 
-Command line tool for [unassert](https://github.com/twada/unassert). Provides `unassert` command which compiles assertions away from target file.
+CLI for [unassert](https://github.com/twada/unassert). Provides `unassert` command which compiles assertions away from target file.
 
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]

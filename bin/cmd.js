@@ -2,7 +2,9 @@
 
 /**
  * unassert-cli
- *   Command line tool to encourage reliable programming by writing assertions in production code, and compiling them away from release
+ *   CLI for unassert:
+ *     Encourage reliable programming by writing assertions in production code,
+ *     and compiling them away from release.
  *
  * https://github.com/twada/unassert-cli
  *
