@@ -10,7 +10,7 @@
  *
  * Copyright (c) 2016 Takuto Wada
  * Licensed under the MIT license.
- *   http://twada.mit-license.org/
+ *   https://twada.mit-license.org/
  */
 'use strict';
 

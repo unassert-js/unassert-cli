@@ -94,7 +94,7 @@ AUTHOR
 
 LICENSE
 ---------------------------------------
-Licensed under the [MIT](http://twada.mit-license.org/) license.
+Licensed under the [MIT](https://twada.mit-license.org/) license.
 
 
 [npm-url]: https://npmjs.org/package/unassert-cli
@@ -106,5 +106,5 @@ Licensed under the [MIT](http://twada.mit-license.org/) license.
 [depstat-url]: https://gemnasium.com/twada/unassert-cli
 [depstat-image]: https://gemnasium.com/twada/unassert-cli.svg
 
-[license-url]: http://twada.mit-license.org/
+[license-url]: https://twada.mit-license.org/
 [license-image]: https://img.shields.io/badge/license-MIT-brightgreen.svg
