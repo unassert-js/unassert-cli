@@ -1,7 +1,7 @@
 unassert-cli
 ================================
 
-CLI for [unassert](https://github.com/twada/unassert). Provides `unassert` command which compiles assertions away from target file.
+CLI for [unassert](https://github.com/unassert-js/unassert). Provides `unassert` command which compiles assertions away from target file.
 
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
@@ -11,16 +11,16 @@ CLI for [unassert](https://github.com/twada/unassert). Provides `unassert` comma
 
 #### RELATED MODULES
 
-- [unassert](https://github.com/twada/unassert): Encourage reliable programming by writing assertions in production code, and compiling them away from release.
-- [unassertify](https://github.com/twada/unassertify): Browserify transform for unassert
-- [babel-plugin-unassert](https://github.com/twada/babel-plugin-unassert): Babel plugin for unassert
-- [webpack-unassert-loader](https://github.com/zoncoen/webpack-unassert-loader): Webpack loader for unassert
-- [gulp-unassert](https://github.com/twada/gulp-unassert): Gulp plugin for unassert
+- [unassert](https://github.com/unassert-js/unassert): Encourage reliable programming by writing assertions in production code, and compiling them away from release.
+- [unassertify](https://github.com/unassert-js/unassertify): Browserify transform for unassert
+- [babel-plugin-unassert](https://github.com/unassert-js/babel-plugin-unassert): Babel plugin for unassert
+- [webpack-unassert-loader](https://github.com/unassert-js/webpack-unassert-loader): Webpack loader for unassert
+- [gulp-unassert](https://github.com/unassert-js/gulp-unassert): Gulp plugin for unassert
 
 
 CHANGELOG
 ---------------------------------------
-See [CHANGELOG](https://github.com/twada/unassert-cli/blob/master/CHANGELOG.md)
+See [CHANGELOG](https://github.com/unassert-js/unassert-cli/blob/master/CHANGELOG.md)
 
 
 EXAMPLE
@@ -58,7 +58,7 @@ function add(a, b) {
 }
 ```
 
-See [unassert](https://github.com/twada/unassert) project for more documentation.
+See [unassert](https://github.com/unassert-js/unassert) project for more documentation.
 
 
 INSTALL
@@ -100,11 +100,11 @@ Licensed under the [MIT](https://twada.mit-license.org/) license.
 [npm-url]: https://npmjs.org/package/unassert-cli
 [npm-image]: https://badge.fury.io/js/unassert-cli.svg
 
-[travis-url]: https://travis-ci.org/twada/unassert-cli
-[travis-image]: https://secure.travis-ci.org/twada/unassert-cli.svg?branch=master
+[travis-url]: https://travis-ci.org/unassert-js/unassert-cli
+[travis-image]: https://secure.travis-ci.org/unassert-js/unassert-cli.svg?branch=master
 
-[depstat-url]: https://gemnasium.com/twada/unassert-cli
-[depstat-image]: https://gemnasium.com/twada/unassert-cli.svg
+[depstat-url]: https://gemnasium.com/unassert-js/unassert-cli
+[depstat-image]: https://gemnasium.com/unassert-js/unassert-cli.svg
 
 [license-url]: https://twada.mit-license.org/
 [license-image]: https://img.shields.io/badge/license-MIT-brightgreen.svg

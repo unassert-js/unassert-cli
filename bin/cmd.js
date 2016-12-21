@@ -6,7 +6,7 @@
  *     Encourage reliable programming by writing assertions in production code,
  *     and compiling them away from release.
  *
- * https://github.com/twada/unassert-cli
+ * https://github.com/unassert-js/unassert-cli
  *
  * Copyright (c) 2016 Takuto Wada
  * Licensed under the MIT license.
