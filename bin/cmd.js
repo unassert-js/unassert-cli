@@ -10,7 +10,7 @@
  *
  * Copyright (c) 2016 Takuto Wada
  * Licensed under the MIT license.
- *   https://twada.mit-license.org/
+ *   https://github.com/unassert-js/unassert-cli/blob/master/LICENSE
  */
 'use strict';
 
@@ -32,4 +32,3 @@ var input = (file && file !== '-') ? fs.createReadStream(file) : process.stdin;
 input.pipe(concat(function(buf) {
     console.log(transform(buf.toString('utf8')));
 }));
-
