@@ -16,12 +16,12 @@
 
 var fs = require('fs');
 var concat = require('concat-stream');
-var esprima = require('esprima');
+var acorn = require('acorn');
 var escodegen = require('escodegen');
 var unassert = require('unassert');
 
 function transform (code) {
-    var ast = esprima.parse(code, { sourceType: 'module' });
+    var ast = acorn.parse(code, { sourceType: 'module' });
     return escodegen.generate(unassert(ast));
 }
 
