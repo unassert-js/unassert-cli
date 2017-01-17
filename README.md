@@ -3,6 +3,8 @@ unassert-cli
 
 CLI for [unassert](https://github.com/unassert-js/unassert). Provides `unassert` command which compiles assertions away from target file.
 
+[![unassert][unassert-banner]][unassert-url]
+
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
 [![Dependency Status][depstat-image]][depstat-url]
@@ -106,6 +108,9 @@ LICENSE
 ---------------------------------------
 Licensed under the [MIT](https://github.com/unassert-js/unassert/blob/master/LICENSE) license.
 
+
+[unassert-url]: https://github.com/unassert-js/unassert
+[unassert-banner]: https://raw.githubusercontent.com/unassert-js/unassert-js-logo/master/banner/banner-official-fullcolor.png
 
 [npm-url]: https://npmjs.org/package/unassert-cli
 [npm-image]: https://badge.fury.io/js/unassert-cli.svg
