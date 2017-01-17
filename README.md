@@ -106,7 +106,7 @@ AUTHOR
 
 LICENSE
 ---------------------------------------
-Licensed under the [MIT](https://github.com/unassert-js/unassert/blob/master/LICENSE) license.
+Licensed under the [MIT](https://github.com/unassert-js/unassert-cli/blob/master/LICENSE) license.
 
 
 [unassert-url]: https://github.com/unassert-js/unassert
@@ -121,5 +121,5 @@ Licensed under the [MIT](https://github.com/unassert-js/unassert/blob/master/LIC
 [depstat-url]: https://gemnasium.com/unassert-js/unassert-cli
 [depstat-image]: https://gemnasium.com/unassert-js/unassert-cli.svg
 
-[license-url]: https://github.com/unassert-js/unassert/blob/master/LICENSE
+[license-url]: https://github.com/unassert-js/unassert-cli/blob/master/LICENSE
 [license-image]: https://img.shields.io/badge/license-MIT-brightgreen.svg
