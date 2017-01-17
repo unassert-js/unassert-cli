@@ -1,6 +1,6 @@
 {
   "name": "unassert-cli",
-  "description": "CLI for unassert: encourage reliable programming by writing assertions in production code, and compiling them away from release",
+  "description": "CLI for unassert: provides `unassert` command which compiles assertions away from target file",
   "version": "1.0.0",
   "author": {
     "name": "Takuto Wada",

@@ -3,8 +3,7 @@
 /**
  * unassert-cli
  *   CLI for unassert:
- *     Encourage reliable programming by writing assertions in production code,
- *     and compiling them away from release.
+ *     Provides `unassert` command which compiles assertions away from target file.
  *
  * https://github.com/unassert-js/unassert-cli
  *

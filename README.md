@@ -11,7 +11,7 @@ CLI for [unassert](https://github.com/unassert-js/unassert). Provides `unassert`
 
 #### RELATED MODULES
 
-- [unassert](https://github.com/unassert-js/unassert): Encourage reliable programming by writing assertions in production code, and compiling them away from release.
+- [unassert](https://github.com/unassert-js/unassert): Encourages programming with assertions by providing tools to compile them away.
 - [unassertify](https://github.com/unassert-js/unassertify): Browserify transform for unassert
 - [babel-plugin-unassert](https://github.com/unassert-js/babel-plugin-unassert): Babel plugin for unassert
 - [webpack-unassert-loader](https://github.com/unassert-js/webpack-unassert-loader): Webpack loader for unassert
