@@ -13,20 +13,20 @@
  */
 'use strict';
 
-const fs = require('fs');
+const { createReadStream } = require('fs');
 const concat = require('concat-stream');
-const acorn = require('acorn');
-const escodegen = require('escodegen');
+const { parse } = require('acorn');
+const { generate } = require('escodegen');
 const unassert = require('unassert');
 
 function transform (code) {
-  const ast = acorn.parse(code, { ecmaVersion: 'latest', sourceType: 'module' });
-  return escodegen.generate(unassert(ast));
+  const ast = parse(code, { ecmaVersion: 'latest', sourceType: 'module' });
+  return generate(unassert(ast));
 }
 
 const args = process.argv.slice(2);
 const file = args[0];
-const input = (file && file !== '-') ? fs.createReadStream(file) : process.stdin;
+const input = (file && file !== '-') ? createReadStream(file) : process.stdin;
 
 input.pipe(concat(function (buf) {
   console.log(transform(buf.toString('utf8')));
