@@ -20,7 +20,7 @@ const escodegen = require('escodegen');
 const unassert = require('unassert');
 
 function transform (code) {
-  const ast = acorn.parse(code, { sourceType: 'module' });
+  const ast = acorn.parse(code, { ecmaVersion: 'latest', sourceType: 'module' });
   return escodegen.generate(unassert(ast));
 }
 
