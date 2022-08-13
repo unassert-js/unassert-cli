@@ -28,6 +28,6 @@ const args = process.argv.slice(2);
 const file = args[0];
 const input = (file && file !== '-') ? createReadStream(file) : process.stdin;
 
-input.pipe(concat(function (buf) {
+input.pipe(concat((buf) => {
   console.log(transform(buf.toString('utf8')));
 }));
