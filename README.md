@@ -115,8 +115,8 @@ Licensed under the [MIT](https://github.com/unassert-js/unassert-cli/blob/master
 [npm-url]: https://npmjs.org/package/unassert-cli
 [npm-image]: https://badge.fury.io/js/unassert-cli.svg
 
-[travis-url]: https://travis-ci.org/unassert-js/unassert-cli
-[travis-image]: https://secure.travis-ci.org/unassert-js/unassert-cli.svg?branch=master
+[ci-url]: https://github.com/unassert-js/unassert-cli/actions?query=workflow%3A%22Node.js+CI%22
+[ci-image]: https://github.com/unassert-js/unassert-cli/workflows/Node.js%20CI/badge.svg
 
 [depstat-url]: https://gemnasium.com/unassert-js/unassert-cli
 [depstat-image]: https://gemnasium.com/unassert-js/unassert-cli.svg

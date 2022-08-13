@@ -12,13 +12,15 @@
   },
   "bugs": "https://github.com/unassert-js/unassert-cli/issues",
   "dependencies": {
-    "acorn": "^7.1.1",
-    "concat-stream": "^1.5.1",
-    "escodegen": "^1.8.0",
+    "acorn": "^8.0.0",
+    "concat-stream": "^2.0.0",
+    "escodegen": "^2.0.0",
     "unassert": "^1.3.1"
   },
   "devDependencies": {
-    "mocha": "^3.0.0"
+    "mocha": "^10.0.0",
+    "semistandard": "^16.0.1",
+    "snazzy": "^9.0.0"
   },
   "files": [
     "CHANGELOG.md",
@@ -40,6 +42,15 @@
     "url": "https://github.com/unassert-js/unassert-cli.git"
   },
   "scripts": {
-    "test": "mocha"
+    "lint": "semistandard --verbose bin/*.js test/*.js | snazzy",
+    "fmt": "semistandard --fix bin/*.js test/*.js",
+    "test": "npm run lint && mocha test"
+  },
+  "semistandard": {
+    "globals": [
+      "describe",
+      "beforeEach",
+      "it"
+    ]
   }
 }
