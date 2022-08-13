@@ -17,11 +17,18 @@ const { createReadStream } = require('fs');
 const concat = require('concat-stream');
 const { parse } = require('acorn');
 const { generate } = require('escodegen');
-const unassert = require('unassert');
+const { unassertAst, defaultOptions } = require('unassert');
+
+// add `power-assert` to target modules to avoid breaking change
+function generateUnassertOptions () {
+  const opts = defaultOptions();
+  opts.modules.push('power-assert');
+  return opts;
+}
 
 function transform (code) {
   const ast = parse(code, { ecmaVersion: 'latest', sourceType: 'module' });
-  return generate(unassert(ast));
+  return generate(unassertAst(ast, generateUnassertOptions()));
 }
 
 const args = process.argv.slice(2);
