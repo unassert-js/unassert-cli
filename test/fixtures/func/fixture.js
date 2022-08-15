@@ -1,6 +1,8 @@
 'use strict';
 
-function add (a, b) {
+const assert = require('node:assert/strict');
+
+async function add (a, b) {
     console.assert(typeof a === 'number');
 
     assert(!isNaN(a));
@@ -52,5 +54,9 @@ function add (a, b) {
 
     assert.ifError(a);
     assert.fail(a, b, 'assertion message', '==');
+
+    await assert.rejects(Promise.reject(new Error(`error: ${a}`)));
+    await assert.doesNotReject(Promise.resolve(b));
+
     return a + b;
 }

@@ -45,5 +45,4 @@ describe('unassert-cli', () => {
   testUnassertCommand('assignment_singlevar');
   testUnassertCommand('es6module');
   testUnassertCommand('es6module_powerassert');
-  testUnassertCommand('not_an_expression_statement');
 });
