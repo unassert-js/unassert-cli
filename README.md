@@ -5,9 +5,9 @@ CLI for [unassert](https://github.com/unassert-js/unassert). Provides `unassert`
 
 [![unassert][unassert-banner]][unassert-url]
 
-[![Build Status][travis-image]][travis-url]
+[![Build Status][ci-image]][ci-url]
 [![NPM version][npm-image]][npm-url]
-[![Dependency Status][depstat-image]][depstat-url]
+[![Code Style][style-image]][style-url]
 [![License][license-image]][license-url]
 
 
@@ -118,8 +118,8 @@ Licensed under the [MIT](https://github.com/unassert-js/unassert-cli/blob/master
 [ci-url]: https://github.com/unassert-js/unassert-cli/actions?query=workflow%3A%22Node.js+CI%22
 [ci-image]: https://github.com/unassert-js/unassert-cli/workflows/Node.js%20CI/badge.svg
 
-[depstat-url]: https://gemnasium.com/unassert-js/unassert-cli
-[depstat-image]: https://gemnasium.com/unassert-js/unassert-cli.svg
+[style-url]: https://github.com/standard/semistandard
+[style-image]: https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg
 
 [license-url]: https://github.com/unassert-js/unassert-cli/blob/master/LICENSE
 [license-image]: https://img.shields.io/badge/license-MIT-brightgreen.svg
