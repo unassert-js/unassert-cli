@@ -18,6 +18,7 @@ CLI for [unassert](https://github.com/unassert-js/unassert). Provides `unassert`
 - [babel-plugin-unassert](https://github.com/unassert-js/babel-plugin-unassert): Babel plugin for unassert
 - [webpack-unassert-loader](https://github.com/unassert-js/webpack-unassert-loader): Webpack loader for unassert
 - [gulp-unassert](https://github.com/unassert-js/gulp-unassert): Gulp plugin for unassert
+- [rollup-plugin-unassert](https://github.com/unassert-js/rollup-plugin-unassert): RollupJS plugin for unassert
 
 
 CHANGELOG
