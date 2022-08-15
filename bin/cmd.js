@@ -7,7 +7,7 @@
  *
  * https://github.com/unassert-js/unassert-cli
  *
- * Copyright (c) 2016-2017 Takuto Wada
+ * Copyright (c) 2016-2022 Takuto Wada
  * Licensed under the MIT license.
  *   https://github.com/unassert-js/unassert-cli/blob/master/LICENSE
  */
