@@ -34,7 +34,7 @@ For given `math.js` below,
 ```javascript
 'use strict';
 
-var assert = require('assert');
+const assert = require('node:assert/strict');
 
 function add (a, b) {
     console.assert(typeof a === 'number');
